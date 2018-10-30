@@ -13,7 +13,7 @@
   font-style: normal;
 
   src: url('pts75f_w.eot');
-  src: local('PT Sans Bold'), url('PTS75F_W.woff') format('woff'), url('PTS75F_W.woff2') format('woff2');
+  src: local('PT Sans Bold'), url('PTS75F_W.woff2') format('woff2'), url('PTS75F_W.woff') format('woff');
   unicode-range: U+000-5FF, U+0410-044F; /* Latin glyphs, кириллица */
   font-display: swap;
 }
@@ -32,7 +32,7 @@
   font-weight: bold;
 
   src: url('ptn77f_w.eot');
-  src: local('PT Sans Narrow Bold'), url('PTN77F_W.woff') format('woff'), url('PTN77F_W.woff2') format('woff2');
+  src: local('PT Sans Narrow Bold'), url('PTN77F_W.woff2') format('woff2'), url('PTN77F_W.woff') format('woff');
   unicode-range: U+000-5FF, U+0410-044F; /* Latin glyphs, кириллица */
   font-display: swap;
 }
