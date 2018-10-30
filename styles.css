@@ -1,3 +1,126 @@
+@import url('./fonts/pt_sans.css');
+
+footer {
+  display: block;
+}
+header {
+  display: block;
+}
+
+nav {
+  display: block;
+}
+section {
+  display: block;
+}
+/*
+html {
+  font-size: 100%;
+
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}*/
+
+input {
+  margin: 0;
+
+  vertical-align: middle;
+
+  font-size: 100%;
+}
+
+input {
+  overflow: visible;
+
+  line-height: normal;
+}
+
+label {
+  cursor: pointer;
+}
+
+input[type='radio'] {
+  cursor: pointer;
+}
+/*
+body {
+  margin: 0;
+
+  color: #222222;
+  background-color: #ffffff;
+
+  font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+}*/
+/*
+a {
+  text-decoration: none;
+
+  color: #2c3e50;
+}
+
+a:hover {
+  text-decoration: underline;
+
+  color: #354b60;
+}
+a:focus {
+  text-decoration: underline;
+
+  color: #354b60;
+}
+*/
+ul {
+  margin: 0 0 10px 25px;
+  padding: 0;
+}
+
+li {
+  line-height: 20px;
+}
+
+label {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 20px;
+}
+input {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+input {
+  font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+label {
+  display: block;
+
+  margin-bottom: 5px;
+}
+
+input {
+  width: 206px;
+}
+
+input[type='radio'] {
+  margin: 4px 0 0;
+  margin-top: 1px \9;
+  margin-top: 0;
+
+  line-height: normal;
+}
+
+input[type='radio'] {
+  width: auto;
+}
+
+input {
+  margin-left: 0;
+}
+
 .adjust-bar {
   position: relative;
 
@@ -358,7 +481,7 @@
   width: 108px;
   height: 27px;
 
-  background-image: url('./assets/logo.png');
+  background-image: url('./assets/logo.webp');
   background-repeat: no-repeat;
   background-position: left top;
   background-size: cover;
@@ -689,7 +812,7 @@ html {
   padding-right: 31px;
 }
 .weather__item_cloud-drizzle {
-  background: url('assets/cloud-drizzle.png') 100% 70%/26px no-repeat;
+  background: url('assets/cloud-drizzle.webp') 100% 70%/26px no-repeat;
 }
 .stats {
   opacity: 0;
@@ -714,9 +837,6 @@ html {
   background: url('assets/panel__icon_clock.svg') center center/contain no-repeat;
 }
 
-.panel__icon_clock {
-  background: url('assets/panel__icon_clock.svg') center center/contain no-repeat;
-}
 .main__greeting {
   font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
