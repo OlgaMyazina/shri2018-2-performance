@@ -1,25 +1,4 @@
 @import url('./fonts/pt_sans.css');
-/*
-footer {
-  display: block;
-}
-header {
-  display: block;
-}
-
-nav {
-  display: block;
-}
-section {
-  display: block;
-}
-/*
-html {
-  font-size: 100%;
-
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}*/
 
 input {
   overflow: visible;
@@ -38,7 +17,15 @@ input {
 }
 
 label {
+  display: block;
+
+  margin-bottom: 5px;
+
   cursor: pointer;
+
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 20px;
 }
 
 input[type='radio'] {
@@ -50,53 +37,6 @@ input[type='radio'] {
   cursor: pointer;
 
   line-height: normal;
-}
-/*
-body {
-  margin: 0;
-
-  color: #222222;
-  background-color: #ffffff;
-
-  font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 15px;
-  line-height: 20px;
-}*/
-/*
-a {
-  text-decoration: none;
-
-  color: #2c3e50;
-}
-
-a:hover {
-  text-decoration: underline;
-
-  color: #354b60;
-}
-a:focus {
-  text-decoration: underline;
-
-  color: #354b60;
-}
-*/
-ul {
-  margin: 0 0 10px 25px;
-  padding: 0;
-}
-
-li {
-  line-height: 20px;
-}
-
-label {
-  display: block;
-
-  margin-bottom: 5px;
-
-  font-size: 15px;
-  font-weight: normal;
-  line-height: 20px;
 }
 
 .adjust-bar {
@@ -265,10 +205,6 @@ label {
 
   margin-right: 11px;
   padding-left: 40px;
-}
-#root {
-  position: absolute;
-  left: -10000px;
 }
 .devices {
   display: flex;
