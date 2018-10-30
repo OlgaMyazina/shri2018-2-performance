@@ -723,7 +723,7 @@ html {
 .panel__icon_clock {
   background: url('assets/panel__icon_clock.svg') center center/contain no-repeat;
 }
-/*
+
 footer {
   display: block;
 }
@@ -844,4 +844,7 @@ input[type='radio'] {
 input {
   margin-left: 0;
 }
-*/
+
+.main__greeting {
+  font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
