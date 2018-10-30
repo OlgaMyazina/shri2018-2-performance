@@ -4,6 +4,7 @@
   src: url('pts55f_w.eot');
   src: local('PT Sans'), url('PTS55F_W.woff') format('woff');
   unicode-range: U+000-5FF, U+0410-044F; /* Latin glyphs, кириллица */
+  font-display: swap; /*Загружает системный, потом заменяем на скаченный*/
 }
 
 @font-face {
@@ -14,6 +15,7 @@
   src: url('pts75f_w.eot');
   src: local('PT Sans Bold'), url('PTS75F_W.woff') format('woff');
   unicode-range: U+000-5FF, U+0410-044F; /* Latin glyphs, кириллица */
+  font-display: swap;
 }
 
 @font-face {
@@ -22,6 +24,7 @@
   src: url('ptn57f_w.eot');
   src: local('PT Sans Narrow'), url('PTN57F_W.woff') format('woff');
   unicode-range: U+000-5FF, U+0410-044F; /* Latin glyphs, кириллица */
+  font-display: swap;
 }
 
 @font-face {
@@ -31,4 +34,5 @@
   src: url('ptn77f_w.eot');
   src: local('PT Sans Narrow Bold'), url('PTN77F_W.woff') format('woff');
   unicode-range: U+000-5FF, U+0410-044F; /* Latin glyphs, кириллица */
+  font-display: swap;
 }
