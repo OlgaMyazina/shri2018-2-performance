@@ -1,5 +1,8 @@
 @import url('./fonts/pt_sans.css');
-
+html {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+/*
 input {
   overflow: visible;
 
@@ -8,7 +11,7 @@ input {
 
   vertical-align: middle;
 
-  font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'PT Sans', Roboto, Helvetica, Arial, sans-serif;
   font-size: 100%;
   font-size: 15px;
   font-weight: normal;
@@ -37,7 +40,7 @@ input[type='radio'] {
   cursor: pointer;
 
   line-height: normal;
-}
+}*/
 
 .adjust-bar {
   position: relative;
