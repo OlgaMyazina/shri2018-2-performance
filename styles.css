@@ -1,5 +1,5 @@
 @import url('./fonts/pt_sans.css');
-
+/*
 footer {
   display: block;
 }
@@ -22,16 +22,18 @@ html {
 }*/
 
 input {
+  overflow: visible;
+
+  width: 206px;
   margin: 0;
 
   vertical-align: middle;
 
+  font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 100%;
-}
-
-input {
-  overflow: visible;
-
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 20px;
   line-height: normal;
 }
 
@@ -40,7 +42,14 @@ label {
 }
 
 input[type='radio'] {
+  width: auto;
+  margin: 4px 0 0;
+  margin-top: 1px \9;
+  margin-top: 0;
+
   cursor: pointer;
+
+  line-height: normal;
 }
 /*
 body {
@@ -81,44 +90,13 @@ li {
 }
 
 label {
-  font-size: 15px;
-  font-weight: normal;
-  line-height: 20px;
-}
-input {
-  font-size: 15px;
-  font-weight: normal;
-  line-height: 20px;
-}
-
-input {
-  font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-label {
   display: block;
 
   margin-bottom: 5px;
-}
 
-input {
-  width: 206px;
-}
-
-input[type='radio'] {
-  margin: 4px 0 0;
-  margin-top: 1px \9;
-  margin-top: 0;
-
-  line-height: normal;
-}
-
-input[type='radio'] {
-  width: auto;
-}
-
-input {
-  margin-left: 0;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 20px;
 }
 
 .adjust-bar {
