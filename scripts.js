@@ -158,15 +158,14 @@ window.addEventListener('scroll', function() {
   document.querySelector('.stats').innerHTML = widths;
 });*/
 selectOptions.forEach(o => {
-  o.addEventListener('click', function(e) {
+  o.addEventListener('click', e => {
     document.querySelector('#' + e.target.dataset.group).checked = true;
-
     selectOptions.forEach(opt => opt.classList.toggle('filter__select-item_checked', false));
     e.target.classList.toggle('filter__select-item_checked', true);
     popup.classList.toggle('filter__select-popup_open', false);
     selectButtonText.innerText = e.target.innerText;
   });
 });
-document.querySelector('.menu__icon').addEventListener('click', function() {
+document.querySelector('.menu__icon').addEventListener('click', () => {
   document.querySelector('.menu').classList.toggle('menu_open');
 });
