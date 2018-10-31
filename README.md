@@ -7,5 +7,8 @@
 3. для svg https://jakearchibald.github.io/svgomg/
 4. https://babeljs.io/repl/
 5. https://developers.google.com/speed/pagespeed/insights/
-6. Пробовала вырезать нужные начертания из шрифта, не прошло соответствие
-7. Удалила не используемые стили, шрифты, html код
+6. Таблица unicode https://unicode-table.com/ru/
+7. Пробовала https://www.fontsquirrel.com/tools/webfont-generator
+8. Пробовала вырезать нужные начертания из шрифта, не прошло соответствие
+9. Удалила не используемые стили, шрифты, html код
+10. Минифицировала css для inline https://jonassebastianohlsson.com/criticalpathcssgenerator/
