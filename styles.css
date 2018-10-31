@@ -1,13 +1,12 @@
-/*@font-face {
+@font-face {
   font-family: 'PT Sans';
   font-weight: bold;
   font-style: normal;
 
   src: local('PT Sans Bold'), url('fonts/PTS75F_W.woff2') format('woff2'), url('fonts/PTS75F_W.woff') format('woff');
-  unicode-range: U+0020-0022, U+002B-002E, U+0410-044F;
+  unicode-range: U+000-5FF, U+0410-044F;
   font-display: swap;
 }
-
 @font-face {
   font-family: 'PT Sans Narrow';
   font-weight: bold;
@@ -17,7 +16,7 @@
   unicode-range: U+0030-0039, U+0020, U+002B, U+002D;
   font-display: swap;
 }
-*/
+
 .adjust-bar {
   position: relative;
 
@@ -150,41 +149,6 @@
 .button:active {
   box-shadow: none;
 }
-.content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-  width: 100%;
-  padding-top: 29px;
-}
-.content__item {
-  position: relative;
-
-  width: 100%;
-  margin-bottom: 29px;
-}
-.content__item_half {
-  width: 49%;
-}
-.content__item_main {
-  padding-left: 40px;
-}
-.content__item_scenarios {
-  padding-right: 40px;
-}
-.content__item-header {
-  margin-bottom: 20px;
-
-  font-size: 18px;
-  font-weight: 700;
-}
-.content__item-header_devices {
-  display: inline-block;
-
-  margin-right: 11px;
-  padding-left: 40px;
-}
 .devices {
   display: flex;
   overflow-x: hidden;
@@ -276,17 +240,7 @@
 .footer__link {
   margin-right: 20px;
 }
-.header {
-  display: flex;
-  align-items: center;
 
-  width: 100%;
-  height: 92px;
-  padding: 0 40px;
-
-  border-bottom: 1px solid #f0f0f0;
-  background: #ffffff;
-}
 .knob {
   position: relative;
 
@@ -352,57 +306,7 @@
 
   height: 80%;
 }
-.link,
-.link:active,
-.link:visited {
-  color: rgba(51, 51, 51, 0.6);
-}
-.link {
-  text-decoration: none;
-}
-.link_active,
-.link:hover {
-  color: inherit;
-}
-.logo {
-  position: relative;
 
-  display: inline-block;
-
-  width: 108px;
-  height: 27px;
-
-  background-image: url('./assets/logo.webp');
-  background-repeat: no-repeat;
-  background-position: left top;
-  background-size: cover;
-}
-.logo__ya {
-  position: absolute;
-  z-index: 10;
-  top: 0;
-  left: 0;
-
-  display: block;
-
-  width: 69px;
-  height: 100%;
-
-  outline: 0;
-}
-.logo__ya-sub {
-  position: absolute;
-  z-index: 5;
-  top: 0;
-  left: 0;
-
-  display: block;
-
-  width: 100%;
-  height: 100%;
-
-  outline: 0;
-}
 .main {
   display: flex;
   justify-content: space-between;
@@ -451,28 +355,7 @@
 .main__weather {
   margin-top: 25px;
 }
-.menu {
-  margin-left: 52px;
-}
-/*
-.menu__icon {
-  display: none;
-}*/
-.menu__item {
-  margin-right: 27px;
 
-  font-size: 16px;
-  font-weight: 700;
-}
-.menu__list {
-  display: flex;
-  justify-content: flex-start;
-
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
 .modal {
   position: fixed;
   z-index: 1;
@@ -555,23 +438,13 @@
 
   width: 100%;
 }
-@keyframes modal {
+/*@keyframes modal {
   from {
     transform: scale(0.2);
   }
-}
-* {
-  box-sizing: border-box;
-}
-html {
-  height: 100%;
-}
-.page {
-  width: 1366px;
-  height: 100%;
-  margin: 0 auto;
-  padding: 0;
+}*/
 
+.page {
   color: #333333;
 
   font: 14px Arial, sans-serif;
@@ -586,6 +459,7 @@ html {
 .page__wrapper-content {
   flex: 1 0 auto;
 }
+
 .paginator {
   display: flex;
   justify-content: space-between;
@@ -705,10 +579,7 @@ html {
 }
 .weather__item_cloud-drizzle {
   background: url('assets/cloud-drizzle.webp') 100% 70%/26px no-repeat;
-} /*
-.stats {
-  opacity: 0;
-}*/
+}
 .panel__icon {
   width: 24px;
   height: 24px;
