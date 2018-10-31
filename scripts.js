@@ -106,21 +106,17 @@ const showModal = selector => {
   document.querySelector(selector).classList.toggle('modal_open', true);
   document.querySelector('body').style.overflow = 'hidden';
 };
-document.querySelectorAll('.panel_temp').forEach(p => {
-  p.onclick = () => {
-    showModal('.modal_temp');
-  };
-});
-document.querySelectorAll('.panel_lamp').forEach(p => {
-  p.onclick = () => {
-    showModal('.modal_light');
-  };
-});
-document.querySelectorAll('.panel_floor').forEach(p => {
-  p.onclick = () => {
-    showModal('.modal_knob');
-  };
-});
+function onClickModal(selector, modal_template) {
+  document.querySelectorAll(selector).forEach(p => {
+    p.onclick = () => {
+      showModal(modal_template);
+    };
+  });
+}
+onClickModal('.panel_temp', '.modal_temp');
+onClickModal('.panel_lamp', '.modal_light');
+onClickModal('.panel_floor', '.modal_knob');
+/*document.querySelectorAll('.panel_temp').forEach(p => {p.onclick = () => {showModal('.modal_temp');};});document.querySelectorAll('.panel_lamp').forEach(p => {p.onclick = () => {showModal('.modal_light');};});document.querySelectorAll('.panel_floor').forEach(p => {p.onclick = () => {showModal('.modal_knob');};});*/
 const arrowLeftScens = document.querySelector('.scenarios__paginator .paginator__arrow_left');
 const arrowRightScens = document.querySelector('.scenarios__paginator .paginator__arrow_right');
 const panelCountScens = document.querySelectorAll('.scenarios__panel').length;
