@@ -16,7 +16,13 @@
   unicode-range: U+0030-0039, U+0020, U+002B, U+002D;
   font-display: swap;
 }
+.menu__list {
+  display: flex;
+  justify-content: flex-start;
 
+  margin: 0;
+  padding: 0;
+}
 .adjust-bar {
   position: relative;
 
