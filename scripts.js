@@ -58,10 +58,7 @@ function startDragging(e) {
   knobDragged = true;
   prevAngleRad = rad;
   prevRotate = curRotate;
-}
-function stopDragging(e) {
-  knobDragged = false;
-}
+} /*function stopDragging(e) {knobDragged = false;}*/
 function dragRotate(e) {
   if (!knobDragged) return;
   const old = prevAngleRad;
@@ -78,10 +75,14 @@ function dragRotate(e) {
 function setEvtListeners() {
   const elem = document.querySelector('.knob-container');
   elem.addEventListener('mousedown', startDragging);
-  document.addEventListener('mouseup', stopDragging);
+  document.addEventListener('mouseup', () => {
+    knobDragged = false;
+  });
   document.addEventListener('mousemove', dragRotate);
   elem.addEventListener('touchstart', startDragging);
-  document.addEventListener('touchend', stopDragging);
+  document.addEventListener('touchend', () => {
+    knobDragged = false;
+  });
   document.addEventListener('touchmove', dragRotate);
 }
 setEvtListeners();
