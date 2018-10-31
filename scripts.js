@@ -58,7 +58,7 @@ function startDragging(e) {
   knobDragged = true;
   prevAngleRad = rad;
   prevRotate = curRotate;
-} /*function stopDragging(e) {knobDragged = false;}*/
+}
 function dragRotate(e) {
   if (!knobDragged) return;
   const old = prevAngleRad;
@@ -117,7 +117,6 @@ function onClickModal(selector, modal_template) {
 onClickModal('.panel_temp', '.modal_temp');
 onClickModal('.panel_lamp', '.modal_light');
 onClickModal('.panel_floor', '.modal_knob');
-/*document.querySelectorAll('.panel_temp').forEach(p => {p.onclick = () => {showModal('.modal_temp');};});document.querySelectorAll('.panel_lamp').forEach(p => {p.onclick = () => {showModal('.modal_light');};});document.querySelectorAll('.panel_floor').forEach(p => {p.onclick = () => {showModal('.modal_knob');};});*/
 const arrowLeftScens = document.querySelector('.scenarios__paginator .paginator__arrow_left');
 const arrowRightScens = document.querySelector('.scenarios__paginator .paginator__arrow_right');
 const panelCountScens = document.querySelectorAll('.scenarios__panel').length;
@@ -141,7 +140,7 @@ arrowLeftScens.addEventListener('click', () => {
     arrowLeftScens.classList.toggle('paginator__arrow_disabled', currentPage === 1);
     scenarios.scroll({ top: 0, left: -645, behavior: 'smooth' });
   }
-}); //const selectButton = document.querySelector('.filter__select-button');//const selectButtonText = document.querySelector('.filter__select-button .button__text');//const selectOptions = document.querySelectorAll('.filter__select-item');//const popup = document.querySelector('.filter__select-popup');/*selectButton.addEventListener('click', function() {popup.classList.toggle('filter__select-popup_open');});/*let widths = '';window.addEventListener('scroll', function() {widths += document.querySelectorAll('body')[0].offsetWidth;document.querySelector('.stats').innerHTML = widths;});*//*selectOptions.forEach(o => {o.addEventListener('click', e => {document.querySelector('#' + e.target.dataset.group).checked = true;selectOptions.forEach(opt => opt.classList.toggle('filter__select-item_checked', false));e.target.classList.toggle('filter__select-item_checked', true);popup.classList.toggle('filter__select-popup_open', false);selectButtonText.innerText = e.target.innerText;});});*/
+});
 document.querySelector('.menu__icon').addEventListener('click', () => {
   document.querySelector('.menu').classList.toggle('menu_open');
 });
