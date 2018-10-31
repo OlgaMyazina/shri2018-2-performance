@@ -13,21 +13,13 @@ pagiantorDevs.classList.toggle('paginator_hide', panelCountDevs < 7);
 arrowRightDevs.addEventListener('click', function() {
   currentPageDevs += 1;
   arrowLeftDevs.classList.toggle('paginator__arrow_disabled', currentPageDevs === 1);
-  devices.scroll({
-    top: 0,
-    left: 1366,
-    behavior: 'smooth'
-  });
+  devices.scroll({ top: 0, left: 1366, behavior: 'smooth' });
 });
 arrowLeftDevs.addEventListener('click', function() {
   if (currentPageDevs > 1) {
     currentPageDevs -= 1;
     arrowLeftDevs.classList.toggle('paginator__arrow_disabled', currentPageDevs === 1);
-    devices.scroll({
-      top: 0,
-      left: -1366,
-      behavior: 'smooth'
-    });
+    devices.scroll({ top: 0, left: -1366, behavior: 'smooth' });
   }
 });
 let curValue,
@@ -67,7 +59,6 @@ function startDragging(e) {
   prevAngleRad = rad;
   prevRotate = curRotate;
 }
-
 function stopDragging(e) {
   knobDragged = false;
 }
@@ -84,7 +75,6 @@ function dragRotate(e) {
   prevRotate = rotate;
   setRotate(rotate);
 }
-
 function setEvtListeners() {
   const elem = document.querySelector('.knob-container');
   elem.addEventListener('mousedown', startDragging);
@@ -94,10 +84,8 @@ function setEvtListeners() {
   document.addEventListener('touchend', stopDragging);
   document.addEventListener('touchmove', dragRotate);
 }
-
 setEvtListeners();
 setRotate(0);
-
 document.querySelectorAll('.modal_close').forEach(b => {
   b.onclick = function() {
     document.querySelectorAll('.modal').forEach(m => {
@@ -106,36 +94,30 @@ document.querySelectorAll('.modal_close').forEach(b => {
     });
   };
 });
-const TEMPS = {
-  manual: -10,
-  cold: 0,
-  warm: 23,
-  hot: 30
-};
+const TEMPS = { manual: -10, cold: 0, warm: 23, hot: 30 };
 document.querySelectorAll('.modal__filter-item_temp').forEach(l => {
-  l.onclick = function() {
+  l.onclick = () => {
     document.querySelector('.adjust-bar_theme_temp').value = TEMPS[this.id];
     document.querySelector('.modal_temp .modal__value').innerHTML =
       TEMPS[this.id] > 0 ? '+' + TEMPS[this.id] : TEMPS[this.id];
   };
 });
-const showModal = function(selector) {
+const showModal = selector => {
   document.querySelector(selector).classList.toggle('modal_open', true);
   document.querySelector('body').style.overflow = 'hidden';
 };
-
 document.querySelectorAll('.panel_temp').forEach(p => {
-  p.onclick = function() {
+  p.onclick = () => {
     showModal('.modal_temp');
   };
 });
 document.querySelectorAll('.panel_lamp').forEach(p => {
-  p.onclick = function() {
+  p.onclick = () => {
     showModal('.modal_light');
   };
 });
 document.querySelectorAll('.panel_floor').forEach(p => {
-  p.onclick = function() {
+  p.onclick = () => {
     showModal('.modal_knob');
   };
 });
@@ -152,11 +134,7 @@ arrowRightScens.addEventListener('click', function() {
     currentPage += 1;
     arrowRightScens.classList.toggle('paginator__arrow_disabled', currentPage === pageCountScens);
     arrowLeftScens.classList.toggle('paginator__arrow_disabled', currentPage === 1);
-    scenarios.scroll({
-      top: 0,
-      left: 645,
-      behavior: 'smooth'
-    });
+    scenarios.scroll({ top: 0, left: 645, behavior: 'smooth' });
   }
 });
 arrowLeftScens.addEventListener('click', function() {
@@ -164,11 +142,7 @@ arrowLeftScens.addEventListener('click', function() {
     currentPage -= 1;
     arrowRightScens.classList.toggle('paginator__arrow_disabled', currentPage === pageCountScens);
     arrowLeftScens.classList.toggle('paginator__arrow_disabled', currentPage === 1);
-    scenarios.scroll({
-      top: 0,
-      left: -645,
-      behavior: 'smooth'
-    });
+    scenarios.scroll({ top: 0, left: -645, behavior: 'smooth' });
   }
 });
 const selectButton = document.querySelector('.filter__select-button');
@@ -177,12 +151,12 @@ const selectOptions = document.querySelectorAll('.filter__select-item');
 const popup = document.querySelector('.filter__select-popup');
 selectButton.addEventListener('click', function() {
   popup.classList.toggle('filter__select-popup_open');
-});
+}); /*
 let widths = '';
 window.addEventListener('scroll', function() {
   widths += document.querySelectorAll('body')[0].offsetWidth;
   document.querySelector('.stats').innerHTML = widths;
-});
+});*/
 selectOptions.forEach(o => {
   o.addEventListener('click', function(e) {
     document.querySelector('#' + e.target.dataset.group).checked = true;
