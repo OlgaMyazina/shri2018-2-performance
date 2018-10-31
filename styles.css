@@ -14,7 +14,7 @@
 
   src: local('PT Sans Narrow Bold'), url('fonts/PTN77F_W.woff2') format('woff2'),
     url('fonts/PTN77F_W.woff') format('woff');
-  unicode-range: U+000-5FF, U+0410-044F;
+  unicode-range: U+0030-0039, U+0020, U+002B, U+002D;
   font-display: swap;
 }
 
