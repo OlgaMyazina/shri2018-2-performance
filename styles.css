@@ -16,13 +16,7 @@
   unicode-range: U+0030-0039, U+0020, U+002B, U+002D;
   font-display: swap;
 }
-.menu__list {
-  display: flex;
-  justify-content: flex-start;
 
-  margin: 0;
-  padding: 0;
-}
 .adjust-bar {
   position: relative;
 
@@ -155,13 +149,7 @@
 .button:active {
   box-shadow: none;
 }
-.devices {
-  display: flex;
-  overflow-x: hidden;
-  justify-content: flex-start;
 
-  padding: 20px 0 6px 40px;
-}
 .devices__panel {
   margin-right: 15px;
 }
@@ -172,21 +160,8 @@
 
   content: '';
 }
-.devices__paginator {
-  position: absolute;
-  top: 0;
-  right: 40px;
-}
-.filter__select {
-  display: none;
-}
+
 .filter__item-label {
-  display: inline-block;
-
-  min-height: 30px;
-  margin-right: 11px;
-  padding: 8px 13px;
-
   cursor: pointer;
 
   border-radius: 15px;
@@ -228,6 +203,10 @@
 }
 .filter__item-radio_cam:checked ~ .devices .panel_cam {
   display: flex;
+}
+.header {
+  border-bottom: 1px solid #f0f0f0;
+  background: #ffffff;
 }
 
 .knob {
@@ -295,6 +274,12 @@
 
   height: 80%;
 }
+.logo {
+  background-image: url('./assets/logo.webp');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+}
 
 .main {
   border-radius: 20px;
@@ -316,6 +301,8 @@
   margin-bottom: 14px;
 }
 .main__status {
+  margin-top: 6px;
+
   line-height: 16px;
 }
 .main__upcoming {
@@ -421,13 +408,6 @@
   flex: 1 0 auto;
 }
 
-.paginator {
-  display: flex;
-  justify-content: space-between;
-
-  width: 47px;
-  height: 16px;
-}
 .paginator div {
   width: 16px;
 }
@@ -449,15 +429,6 @@
   opacity: 0.3;
 }
 .panel {
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-  justify-content: space-between;
-
-  width: 200px;
-  min-height: 100px;
-  padding: 14px;
-
   cursor: pointer;
   transition: opacity 0.3s ease-out;
 
@@ -492,10 +463,6 @@
 }
 .scenarios {
   background: #ffffff;
-}
-
-.scenarios_hide {
-  display: none;
 }
 .weather {
   display: flex;

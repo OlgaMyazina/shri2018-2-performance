@@ -17,9 +17,6 @@ html {
   width: 100%;
   height: 92px;
   padding: 0 40px;
-
-  border-bottom: 1px solid #f0f0f0;
-  background: #ffffff;
 }
 .logo {
   position: relative;
@@ -28,11 +25,6 @@ html {
 
   width: 108px;
   height: 27px;
-
-  background-image: url('./assets/logo.webp');
-  background-repeat: no-repeat;
-  background-position: left top;
-  background-size: cover;
 }
 .logo__ya-sub {
   position: absolute;
@@ -48,13 +40,15 @@ html {
   outline: 0;
 }
 .link,
+.link:active,
 .link:visited {
   color: rgba(51, 51, 51, 0.6);
 }
 .link {
   text-decoration: none;
 }
-.link_active {
+.link_active,
+.link:hover {
   color: inherit;
 }
 .menu {
@@ -67,10 +61,12 @@ html {
   font-weight: 700;
 }
 .menu__list {
-  /*display: flex;
+  display: flex;
   justify-content: flex-start;
+
   margin: 0;
-  padding: 0;*/
+  padding: 0;
+
   list-style: none;
 }
 .content {
@@ -151,17 +147,14 @@ html {
 .devices__panel {
   margin-right: 15px;
 }
-.devices::after {
-  display: inline-block;
-
-  min-width: 25px;
-
-  content: '';
-}
 .devices__paginator {
   position: absolute;
   top: 0;
   right: 40px;
+}
+
+.filter__select {
+  display: none;
 }
 .filter__item-label {
   display: inline-block;
@@ -169,13 +162,6 @@ html {
   min-height: 30px;
   margin-right: 11px;
   padding: 8px 13px;
-
-  border-radius: 15px;
-  background: #f7f7f7;
-
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 1;
 }
 .filter__item-radio {
   display: none;
@@ -191,15 +177,7 @@ html {
   width: 47px;
   height: 16px;
 }
-.paginator div {
-  width: 16px;
-}
-.paginator__arrow {
-  opacity: 1;
-}
-.paginator__arrow_disabled {
-  opacity: 0.3;
-}
+
 .panel {
   display: flex;
   flex-direction: column;
@@ -209,25 +187,6 @@ html {
   width: 200px;
   min-height: 100px;
   padding: 14px;
-
-  border-radius: 20px;
-  background: #f7f7f7;
-}
-.panel_device {
-  height: 120px;
-}
-.panel_first {
-  margin-top: 20px;
-}
-.panel__sub {
-  color: #858585;
-
-  font-size: 12px;
-}
-.panel__title {
-  margin-bottom: 4px;
-
-  font-weight: 700;
 }
 .scenarios {
   display: flex;
@@ -251,6 +210,9 @@ html {
   position: absolute;
   top: 0;
   right: 40px;
+}
+.scenarios_hide {
+  display: none;
 }
 .panel__icon {
   width: 24px;
