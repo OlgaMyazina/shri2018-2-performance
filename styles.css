@@ -224,23 +224,6 @@
   display: flex;
 }
 
-.footer {
-  display: flex;
-  align-items: center;
-  flex: 0 0 auto;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-
-  width: 100%;
-  height: 60px;
-  padding-left: 40px;
-
-  font-size: 12px;
-}
-.footer__link {
-  margin-right: 20px;
-}
-
 .knob {
   position: relative;
 
@@ -438,11 +421,11 @@
 
   width: 100%;
 }
-/*@keyframes modal {
+@keyframes modal {
   from {
     transform: scale(0.2);
   }
-}*/
+}
 
 .page {
   color: #333333;
@@ -579,10 +562,6 @@
 }
 .weather__item_cloud-drizzle {
   background: url('assets/cloud-drizzle.webp') 100% 70%/26px no-repeat;
-}
-.panel__icon {
-  width: 24px;
-  height: 24px;
 }
 .panel__icon_temp_off {
   background: url('assets/panel__icon_temp_off.svg') center center/contain no-repeat;
