@@ -4,7 +4,45 @@
 <head>
   <meta charset="UTF-8">
   <title>Smarthome</title>
-  <link rel="stylesheet" href="style_critical.css">
+  <style type="text/css">* {box-sizing: border-box;}
+      html{height: 100%;}
+      .page {width: 1366px;height: 100%;margin: 0 auto;padding: 0;}
+      .header {display: flex;align-items: center;width: 100%;height: 92px;padding: 0 40px;}
+      .logo {position: relative;display: inline-block;width: 108px;height: 27px;}
+      .logo__ya-sub {position: absolute;z-index: 5;top: 0;left: 0;display: block;width: 100%;height: 100%;outline: 0;}
+      .link,.link:active,.link:visited {color: rgba(51, 51, 51, 0.6);}
+      .link {text-decoration: none;}
+      .link_active,.link:hover {color: inherit;}
+      .menu {margin-left: 52px;}
+      .menu__item {margin-right: 27px;font-size: 16px;font-weight: 700;}
+      .menu__list {display: flex;justify-content: flex-start;margin: 0;padding: 0;list-style: none;}
+      .content {display: flex;flex-wrap: wrap;justify-content: space-between;width: 100%;padding-top: 29px;}
+      .content__item {position: relative;width: 100%;margin-bottom: 29px;}
+      .content__item_half {width: 49%;}
+      .content__item_main {padding-left: 40px;}
+      .content__item_scenarios {padding-right: 40px;}
+      .content__item-header {margin-bottom: 20px;font-size: 18px;font-weight: 700;}
+      .content__item-header_devices {display: inline-block;margin-right: 11px;padding-left: 40px;}
+      .main {display: flex;justify-content: space-between;height: 331px;padding: 0 20px 0 25px;}
+      .main__greeting {margin-top: 6px;font-size: 27px;font-weight: 700;}
+      .modal {position: fixed;z-index: 1;top: 0;left: 0;display: none;overflow: auto;align-items: center;flex-direction: column;justify-content: center;width: 100%;height: 100%;background: rgba(51, 51, 51, 0.5);}
+      .devices {display: flex;overflow-x: hidden;justify-content: flex-start;padding: 20px 0 6px 40px;}
+      .devices__panel {margin-right: 15px;}
+      .devices__paginator {position: absolute;top: 0;right: 40px;}
+      .filter__select {display: none;}
+      .filter__item-label {display: inline-block;min-height: 30px;margin-right: 11px;padding: 8px 13px;}
+      .filter__item-radio {display: none;}
+      .filter__item-radio:checked + label {background: #ffd93e;}
+      .paginator {display: flex;justify-content: space-between;width: 47px;height: 16px;}
+      .panel {display: flex;flex-direction: column;flex-shrink: 0;justify-content: space-between;width: 200px;min-height: 100px;padding: 14px;}
+      .scenarios {display: flex;overflow-x: hidden;justify-content: flex-start;max-height: 331px;}
+      .scenarios__page {display: grid;justify-content: space-between;margin-right: 15px;grid-template-columns: repeat(3, 200px);grid-template-rows: repeat(3, 100px);grid-column-gap: 15px;grid-row-gap: 15px;}
+      .scenarios__paginator {position: absolute;top: 0;right: 40px;}
+      .scenarios_hide {display: none;}
+      .panel__icon {width: 24px;height: 24px;}
+      .footer {display: flex;align-items: center;flex: 0 0 auto;flex-wrap: wrap;justify-content: flex-start;width: 100%;height: 60px;padding-left: 40px;font-size: 12px;}
+      .footer__link {margin-right: 20px;}
+      </style>
   <link rel="preload" href="styles.css" as="style" onload="this.rel='stylesheet'">
   <script defer src="scripts.js"></script>
 </head>
