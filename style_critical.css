@@ -1,0 +1,349 @@
+@font-face {
+  font-family: 'PT Sans';
+  font-weight: bold;
+  font-style: normal;
+
+  src: local('PT Sans Bold'), url('fonts/PTS75F_W.woff2') format('woff2'), url('fonts/PTS75F_W.woff') format('woff');
+  unicode-range: U+000-5FF, U+0410-044F;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'PT Sans Narrow';
+  font-weight: bold;
+
+  src: local('PT Sans Narrow Bold'), url('fonts/PTN77F_W.woff2') format('woff2'),
+    url('fonts/PTN77F_W.woff') format('woff');
+  unicode-range: U+0030-0039, U+0020, U+002B, U+002D;
+  font-display: swap;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 100%;
+  padding-top: 29px;
+}
+.content__item {
+  position: relative;
+
+  width: 100%;
+  margin-bottom: 29px;
+}
+.content__item_half {
+  width: 49%;
+}
+.content__item_main {
+  padding-left: 40px;
+}
+.content__item_scenarios {
+  padding-right: 40px;
+}
+.content__item-header {
+  margin-bottom: 20px;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+.content__item-header_devices {
+  display: inline-block;
+
+  margin-right: 11px;
+  padding-left: 40px;
+}
+.devices {
+  display: flex;
+  overflow-x: hidden;
+  justify-content: flex-start;
+
+  padding: 20px 0 6px 40px;
+}
+.devices__panel {
+  margin-right: 15px;
+}
+.devices::after {
+  display: inline-block;
+
+  min-width: 25px;
+
+  content: '';
+}
+.devices__paginator {
+  position: absolute;
+  top: 0;
+  right: 40px;
+}
+.filter__item-label {
+  display: inline-block;
+
+  min-height: 30px;
+  margin-right: 11px;
+  padding: 8px 13px;
+
+  border-radius: 15px;
+  background: #f7f7f7;
+
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+}
+.filter__item-radio {
+  display: none;
+}
+.filter__item-radio:checked + label {
+  background: #ffd93e;
+}
+.header {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 92px;
+  padding: 0 40px;
+
+  border-bottom: 1px solid #f0f0f0;
+  background: #ffffff;
+}
+.link,
+.link:visited {
+  color: rgba(51, 51, 51, 0.6);
+}
+.link {
+  text-decoration: none;
+}
+.link_active {
+  color: inherit;
+}
+.logo {
+  position: relative;
+
+  display: inline-block;
+
+  width: 108px;
+  height: 27px;
+
+  background-image: url('./assets/logo.webp');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+}
+.logo__ya-sub {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  outline: 0;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+
+  height: 331px;
+  padding: 0 20px 0 25px;
+
+  border-radius: 20px;
+  background: url('assets/sh.webp') center center/cover no-repeat;
+}
+.main__greeting {
+  margin-top: 6px;
+
+  font-size: 27px;
+  font-weight: 700;
+}
+.main__info {
+  width: 61.585%;
+  padding-top: 20px;
+  padding-left: 20px;
+
+  background: rgba(255, 255, 255, 0.6);
+}
+.main__panel {
+  position: relative;
+
+  margin-bottom: 14px;
+}
+.main__status {
+  margin-top: 6px;
+
+  line-height: 16px;
+}
+.main__upcoming {
+  overflow-y: scroll;
+
+  width: 220px;
+  height: 100%;
+}
+.main__upcoming-wrapper {
+  overflow: hidden;
+
+  width: 200px;
+  height: 100%;
+}
+.main__weather {
+  margin-top: 25px;
+}
+.menu {
+  margin-left: 52px;
+}
+.menu__item {
+  margin-right: 27px;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+.menu__list {
+  display: flex;
+  justify-content: flex-start;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+.page {
+  width: 1366px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+
+  color: #333333;
+
+  font: 14px Arial, sans-serif;
+  line-height: 1.143;
+}
+.page__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+}
+.page__wrapper-content {
+  flex: 1 0 auto;
+}
+.paginator {
+  display: flex;
+  justify-content: space-between;
+
+  width: 47px;
+  height: 16px;
+}
+.paginator div {
+  width: 16px;
+}
+.paginator__arrow {
+  opacity: 1;
+}
+.paginator__arrow_disabled {
+  opacity: 0.3;
+}
+.panel {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  justify-content: space-between;
+
+  width: 200px;
+  min-height: 100px;
+  padding: 14px;
+
+  border-radius: 20px;
+  background: #f7f7f7;
+}
+.panel_device {
+  height: 120px;
+}
+.panel_first {
+  margin-top: 20px;
+}
+.panel__sub {
+  color: #858585;
+
+  font-size: 12px;
+}
+.panel__title {
+  margin-bottom: 4px;
+
+  font-weight: 700;
+}
+.scenarios {
+  display: flex;
+  overflow-x: hidden;
+  justify-content: flex-start;
+
+  max-height: 331px;
+
+  background: #ffffff;
+}
+.scenarios__page {
+  display: grid;
+  justify-content: space-between;
+
+  margin-right: 15px;
+
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(3, 100px);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+.scenarios__paginator {
+  position: absolute;
+  top: 0;
+  right: 40px;
+}
+.weather {
+  display: flex;
+}
+.weather__item {
+  margin-right: 18px;
+}
+.weather__item-title {
+  margin-bottom: 4px;
+
+  color: #858585;
+}
+.weather__item-temp {
+  font-family: 'PT Sans Narrow', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+}
+.weather__item_outside {
+  padding-right: 31px;
+}
+.weather__item_cloud-drizzle {
+  background: url('assets/cloud-drizzle.webp') 100% 70%/26px no-repeat;
+}
+.panel__icon {
+  width: 24px;
+  height: 24px;
+}
+.panel__icon_temp_off {
+  background: url('assets/panel__icon_temp_off.svg') center center/contain no-repeat;
+}
+.panel__icon_temp_on {
+  background: url('assets/panel__icon_temp_on.svg') center center/contain no-repeat;
+}
+.panel__icon_light_off {
+  background: url('assets/panel__icon_light_off.svg') center center/contain no-repeat;
+}
+.panel__icon_light_on {
+  background: url('assets/panel__icon_light_on.svg') center center/contain no-repeat;
+}
+.panel__icon_clock {
+  background: url('assets/panel__icon_clock.svg') center center/contain no-repeat;
+}
+.main__greeting {
+  font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
